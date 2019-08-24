@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+
+        <div class="p-3 mb-2 bg-info text-white">Christina Sosa</div>
+        <form class="form-inline">
+
+            <a class="active" href="contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html">About</a>
+
+        </form>
+    </nav>
+    <div class="container full height">
+        <div class="row form-height">
+        
+
+
+            <div class="col-md-10 mb-md-0 mb-10">
+                    <h3>Contact</h3>
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Name</label>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-10">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Email</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-10">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="6"
+                                    class="form-control md-textarea"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Submit</a>
+                </div>
+                <div class="status"></div>
+            </div>
+        </div>
+
+        </section>
+
+    </div>
+
+    <div class="fixed-bottom">
+        <div class="card-footer sm-transparent border-top 8px soild text-center">Copyright</div>
+    </div>
+</body>
+
+</html>
